@@ -8,9 +8,9 @@ namespace NLPKit.CCG
     {
         public CCGCategory Result { get; set; }
         public CCGCategory Arg { get; set; }
-        public Direction Dir { get; set; }
+        public CCGCategory Dir { get; set; }
 
-        public FunctionalCategory(CCGCategory result, CCGCategory arg, Direction dir )
+        public FunctionalCategory(CCGCategory result, CCGCategory arg, CCGCategory dir )
         {
             Result = result;
             Arg = arg;
